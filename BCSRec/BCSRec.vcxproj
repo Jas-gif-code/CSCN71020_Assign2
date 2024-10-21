@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="unittest.c" />
+    <ClCompile Include="unittest_1.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />

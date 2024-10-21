@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-
+#include <assert.h>
 #include "main.h"
 
 void main() {
@@ -56,8 +56,15 @@ void main() {
 			}
 		}
 	}
-}
+	
+	test_getPerimeter();
+	test_getArea();
+	test_setLength();
+	test_setWidth();
+	return 0;
+} 
 
+	
 int getIntInput(char message[]) {
 	int input;
 	int scannedValues;
@@ -74,6 +81,7 @@ void setLength(int input, int *length) {
 	if (input >= 0 && input < 100) {
 		*length = input;
 	}
+
 }
 
 void setWidth(int input, int *width) {
@@ -107,3 +115,4 @@ void printOptions() {
 	printf("5. Get Rectangle Area\n");
 	printf("6. Exit\n");
 }
+
